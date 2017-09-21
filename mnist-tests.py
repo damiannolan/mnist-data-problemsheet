@@ -12,4 +12,7 @@ f = gzip.open('data/train-images-idx3-ubyte.gz', 'rb')
 magicNumber = f.read(4)
 print(magicNumber)
 
+print(int.from_bytes(magicNumber, byteorder='big'))
+
+
 f.close()
