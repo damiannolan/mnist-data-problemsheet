@@ -2,6 +2,7 @@
 
 import gzip
 import numpy as np
+import PIL.Image as pil
 
 def read_labels_from_file(filename):
     with gzip.open(filename, 'rb') as f:
@@ -66,12 +67,11 @@ for row in train_images[4999]:
     for col in row:
         print('.' if col < 128 else '#', end='')
     print()
-'
-import PIL as pil
+
 img = train_images[4999]
 img = np.array(img)
-img = pil.fromarray(img)
+img = pil.fromarray(img.astype('uint8'))
 img = img.convert('RGB')
 img.show()
 img.save('2.png')
-'
+

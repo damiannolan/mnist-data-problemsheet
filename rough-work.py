@@ -3,7 +3,7 @@
 # https://stackoverflow.com/questions/2872381/how-to-read-a-file-byte-by-byte-in-python-and-how-to-print-a-bytelist-as-a-binar
 
 import gzip
-#import numpy as np
+import numpy as np
 
 f = gzip.open('data/train-images-idx3-ubyte.gz', 'rb')
 
@@ -61,3 +61,11 @@ for i in range(28):
             print("#", end="")
     print()
 f.close()
+
+import PIL.Image
+
+image = np.array(image)
+image = PIL.Image.fromarray(image)
+image = image.convert('RGB')
+image.show()
+image.save('/data/test.png')
