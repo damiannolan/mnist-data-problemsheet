@@ -62,10 +62,16 @@ for i in range(28):
     print()
 f.close()
 
-import PIL.Image
+def save_image(image, label, directory):
 
-image = np.array(image)
-image = PIL.Image.fromarray(image)
-image = image.convert('RGB')
-image.show()
-image.save('/data/test.png')
+    output = "images/%s-%05d-%d"
+    print(output % (directory, image, label))
+
+save_image(1, 5, "train")
+
+img = train_images[4999]
+img = np.array(img)
+img = pil.fromarray(img.astype('uint8'))
+img = img.convert('RGB')
+img.show()
+img.save('2.png')
