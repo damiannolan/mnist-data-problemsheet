@@ -62,6 +62,7 @@ def read_images_from_file(filename):
         return images
 
 train_images = read_images_from_file('data/train-images-idx3-ubyte.gz')
+test_images = read_images_from_file('data/t10k-images-idx3-ubyte.gz')
 
 for row in train_images[4999]:
     for col in row:
