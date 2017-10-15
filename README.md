@@ -16,20 +16,20 @@ The functions are listed as follows:
 
 ## Prerequistes
 
-1. If you are using OSX - Install Python 3 using [Homebrew](https://brew.sh/). Alternatively check out
+### 1. If you are using OSX - Install Python 3 using [Homebrew](https://brew.sh/). Alternatively check out
 [Anaconda](https://www.anaconda.com/download/) - An open source distribution of Python.
 
 ```
 brew install python3
 ```
 
-2. Clone this repository
+### 2. Clone this repository
 
 ```
 git clone https://github.com/damiannolan/mnist-data-problemsheet.git
 ```
 
-3. Download the MNIST data files from the link provided above and place the .gz files in a subfolder named `data` 
+### 3. Download the MNIST data files from the link provided above and place the .gz files in a subfolder named `data` 
 
 ## Usage
 
@@ -55,3 +55,6 @@ Name the images in the format `train-XXXXX-Y.png` or `test-XXXXX-Y.png` where `X
 occurs in the data file) and `Y` is its label.
 For instance, the five-thousandth training image is labelled 2, so its file name should be `train-04999-2.png`.
 Note the images are indexed from 0, so the five-thousandth image is indexed as 4999.
+
+## Example
+![example](https://github.com/damiannolan/mnist-data-problemsheet/blob/master/2.png)
