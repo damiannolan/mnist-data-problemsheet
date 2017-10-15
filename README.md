@@ -14,8 +14,32 @@ The functions are listed as follows:
 - save_image
 - print_image
 
-The original problem sheet can be found [HERE!](https://emerging-technologies.github.io/problems/mnist.html)
+## Prerequistes
 
+1. If you are using OSX - Install Python 3 using [Homebrew](https://brew.sh/). Alternatively check out
+[Anaconda](https://www.anaconda.com/download/) - An open source distribution of Python.
+
+```
+brew install python3
+```
+
+2. Clone this repository
+
+```
+git clone https://github.com/damiannolan/mnist-data-problemsheet.git
+```
+
+3. Download the MNIST data files from the link provided above and place the .gz files in a subfolder named `data` 
+
+## Usage
+
+```
+python3 mnist-data.py
+```
+
+## Problems
+
+The original problem sheet can be found [HERE!](https://emerging-technologies.github.io/problems/mnist.html)
 
 ## 1. Read the data files
 Download the image and label files.
